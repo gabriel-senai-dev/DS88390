@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.paidetodos {
+    margin: 15px;
+}
+
+.elemento1 {
+    height: 50px;
+    background-color: #fdba74;
+}
+
+.elemento2 {
+    height: 450px;
+    background-color: #fed7aa;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container div{
+    height: 200px;
+    width: 200px;
+    background-color: #06b6d4;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin: 15px;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-top: 30px;
+}
+.container2 div{
+    height: 200px;
+    width: 200px;
+    background-color: #06b6d4;
+    margin: 15px;
+    margin-left: 20px;
+}
