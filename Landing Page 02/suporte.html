@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Landing page 02</title>
+    <title>Suporte</title>
 </head>
 <body>
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="#">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li class="dropdown">
                     <a href="">Serviços</a>
                     <ul class="dropdown-content">
@@ -26,13 +26,25 @@
     </header>
 
     <main>
-        <section class="content">
-            <h1>Bem-vindo á nossa página</h1>
-            <p>Estamos aqui para oferecer os melhores serviços para você.</p>
-            <img src="img/img.jpg" alt="Imagem de um computador">
+        <section class="contact">
+            <h1>Precisa de ajuda?</h1>
+            <p>Envie-nos uma mensagem sobre o seu problema preechendo o formulário abaixo:</p>
+
+            <form action="#" method="post">
+                <label for="nome">Problema:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu problema">
+
+                <label for="assunto">Tipo:</label>
+                <input type="text" id="assunto" name="assunto" required placeholder="Tipo do problema">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Descreva seu problema" rows="5"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
-
+    
     <footer>
         <p>&copy; 2024 - Todos os direitos reservados.</p>
     </footer>
