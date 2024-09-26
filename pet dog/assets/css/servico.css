@@ -3,6 +3,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 1px;
 }
 
 header {
@@ -80,88 +82,6 @@ header {
     display: none;
 }
 
-/* MAIN */
-
-.main {
-    padding: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.main h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #000;
-    margin: 20px 0;
-}
-
-.main h2 {
-    font-size: 1.5em;
-    color: #1a1a1a;
-    margin-bottom: 20px;
-}
-
-.main img {
-    width: 80%;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-/*  */
-
-/* Main2 */
-
-.main2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    background-color: #3ab0c8;
-    padding: 40px;
-    text-align: center;
-}
-
-.main2 h2 {
-    font-size: 36px;
-    color: #000;
-    margin-bottom: 20px;
-}
-
-.main2 p {
-    font-size: 20px;
-    color: #1a1a1a;
-    margin-bottom: 20px;
-}
-
-.main2 a {
-    background-color: #0187a7;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.main2 a:hover {
-    background-color: #016f8b;
-}
-
-.whatsapp-contato h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*  */
-
-/* FOOTER */
-
 :root {
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
@@ -170,17 +90,10 @@ header {
 
 }
 
-* {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-}
-
 footer {
     width: 100%;
     color: var(--color-neutral-40);
+
 }
 
 .footer-link {
@@ -339,4 +252,50 @@ footer {
     .open {
         display: block;
     }
+}
+
+/*  */
+main {
+    min-height: 90vh;
+}
+
+.maintext {
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.maintext h2 {
+    margin-bottom: 20px;
+}
+
+.servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.servico {
+    width: 450px;
+    margin: 20px;
+    text-align: center;
+}
+
+.servico img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.servico h3 {
+    color: #0187a7;
+    margin: 10px 0;
+}
+
+.servico p {
+    color: #555;
 }

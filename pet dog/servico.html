@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/contato.css">
-    <title>Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/servico.css">
+    <title>Serviços</title>
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
@@ -16,8 +19,8 @@
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                    <li class="nav-item"><a href="servico.html" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
                     <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li> 
                 </ul>
             </div>
@@ -32,8 +35,8 @@
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                <li class="nav-item"><a href="servico.html" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
                 <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
             </ul>
 
@@ -43,34 +46,42 @@
         </div>
     </header>
 
+    <!-- MAIN -->
+
     <main>
-        <section class="contato">
-            <h1>Fale Conosco</h1>
-            <form action="#">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome">
-    
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Seu e-mail">
-    
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-    
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+        <div class="maintext">
+            <h2>Nossos Serviços</h2>
+            <p>Oferecemos uma ampla gama de serviços para o bem-estar do seu pet.</p>
+        </div>
 
-        <section class="whatsapp-contato">
-            <h2>Ou fale diretamente pelo WhatsApp</h2>
-            <a href="https://wa.me/5591999999999" class="whatsapp-botao" target="_blank">
-                <img src="assets/img/whatsapp.png"WhatsApp">
-                Enviar mensagem no WhatsApp
-            </a>
-        </section>
+        <div class="servicos">
 
+            <div class="servico">
+                <img src="assets/img/banho.png" alt="Serviço de Banho e Tosa">
+                <h3>Banho e Tosa</h3>
+                <p>Banho e tosa com profissionais especializados para cuidar da aparência e higiene do seu pet.</p>
+            </div>
+    
+            <div class="servico">
+                <img src="assets/img/consulta.png" alt="Consultas Veterinárias">
+                <h3>Consultas Veterinárias</h3>
+                <p>Atendimento veterinário com diagnóstico preciso e cuidados para manter seu pet saudável.</p>
+            </div>
+    
+            <div class="servico">
+                <img src="assets/img/hospedagem.png" alt="Hospedagem para Pets">
+                <h3>Hospedagem</h3>
+                <p>Hospedagem segura e confortável para seu pet enquanto você viaja.</p>
+            </div>
+    
+            <div class="servico">
+                <img src="assets/img/vacinas.png" alt="Vacinação de Pets">
+                <h3>Vacinação</h3>
+                <p>Vacinação completa para proteger seu pet contra doenças.</p>
+            </div>
+        </div>
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
@@ -145,6 +156,5 @@
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
-    
 </body>
 </html>
