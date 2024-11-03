@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+/* Variáveis para cores e fontes */
+:root {
+    --primary-color: #7250e9;
+    --primary-color-hover: #6040d0;
+    --background-dark: #13131d;
+    --text-light: #fff;
+    --text-dark: #13131d;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --font-family: 'Inter', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--background-dark);
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1,
+.nav-link {
+    color: var(--text-light);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list ul {
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 400;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 2px;
+    bottom: -5px; 
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.login-button button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Conteúdo index.html */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.register-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    max-width: 700px;
+    width: 100%;
+}
+
+.register-section h2 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.register-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+img {
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.2rem;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9fafb;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+
+button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+/* Conteúdo contact.html*/
+.contact-container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: var(--text-dark);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-container-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.card-container-item:hover {
+    transform: scale(1.05);
+}
+
+.card-container-item i {
+    color: var(--primary-color);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.card-container-item h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-container-item p {
+    color: #555;
+    font-size: 16px;
+}
+
+.card-container-item img {
+    height: auto;
+    max-width: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Conteúdo product.html */
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-light);
+    padding: 1rem 0;
+    background-color: var(--background-dark);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

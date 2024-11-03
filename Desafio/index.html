@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TechStore</title>
+</head>
+<body>
+    
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><i class="fa-solid fa-microchip"></i></h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="product.html" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo -->
+    <main>
+        <div class="register-section">
+            <h2>Cadastre-se para receber novidades!</h2>
+
+            <div class="register-content">
+                <img src="src/img/tech.jpg" alt="Decrição da imagem" class="register-image">
+                
+                <form action="src/database/conn.php" method="POST">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome completo">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+
+                    <label for="details">Detalhes:</label>
+                    <textarea name="details" id="details" placeholder="Descreva suas necessidades ou interesses"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        &copy; 2024 @Gabriel. Todos os direitos reservados.
+    </footer>
+
+    <script src="src/js/scripts.js"></script>
+</body>
+</html>
